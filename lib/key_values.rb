@@ -11,4 +11,21 @@ class Key_value
     return new_hash
   end
 
+  def get_hash
+    return @value
+  end
+
+  def delete_hash
+    if (@key == "d" && @value == "d")
+      return "nil"
+    else
+      return "not deleted"
+    end
+  end
 end
+
+# add()
+# get()
+# delete ()
+# get keys
+# clear
