@@ -7,4 +7,8 @@ class Numbers
       return "fail"
     end
   end
+
+  def sum_numbers(x, y, z)
+    return x + y + z
+  end
 end
