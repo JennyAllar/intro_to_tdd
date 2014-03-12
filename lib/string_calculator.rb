@@ -1,5 +1,9 @@
 class Numbers
 
+  def initialize(delimiter=",")
+  @delimiter = delimiter
+  end
+
   def is_empty(string)
     if string == ""
       return 0
@@ -9,7 +13,7 @@ class Numbers
   end
 
   def add(string)
-    array = string.split(",").map(&:to_i)
+    array = string.split(@delimiter).map(&:to_i)
     total = array.inject(0, &:+)
     return total
   end

@@ -20,5 +20,14 @@ describe 'string_calculator' do
   expect(actual).to eq expected
   end
 
+  it "allows user to specify delimiter" do
+    string = Numbers.new("+")
+
+    expected = 10
+    actual = string.add("1+2+7")
+
+    expect(actual).to eq expected
+  end
+
 
 end
