@@ -3,7 +3,6 @@ require 'string_calculator'
 
 describe 'string_calculator' do
   it "returns 0 if an empty string is passed" do
-    pending
   string = Numbers.new()
 
   expected = 0
