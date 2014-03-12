@@ -8,7 +8,13 @@ class Numbers
     end
   end
 
-  def sum_numbers(x, y, z)
-    return x + y + z
+  def sum_numbers(string)
+    #array = string.split(',')
+    #sum = array.reduce :+
+    #total = sum.to_i
+    #return total
+    array = string.split(",").map(&:to_i)
+    total = array.inject(0, &:+)
+    return total
   end
 end

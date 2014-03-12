@@ -16,7 +16,7 @@ describe 'string_calculator' do
   string = Numbers.new()
 
   expected = 10
-  actual = string.sum_numbers(1, 2, 7)
+  actual = string.sum_numbers("1, 2, 7")
 
   expect(actual).to eq expected
   end
