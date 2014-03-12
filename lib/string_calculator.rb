@@ -8,7 +8,7 @@ class Numbers
     end
   end
 
-  def sum_numbers(string)
+  def add(string)
     array = string.split(",").map(&:to_i)
     total = array.inject(0, &:+)
     return total
