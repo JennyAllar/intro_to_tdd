@@ -1,33 +1,13 @@
 require 'rspec/core'
 require 'string_calculator'
 
-describe 'string_calculator' do
-  it "returns 0 if an empty string is passed" do
-  string = Numbers.new()
+describe StringCalc do
 
-  expected = 0
-  actual = string.is_empty("")
+  it "returns 0 when calling add with an empty string" do
+    calculator = StringCalc.new
 
-  expect(actual).to eq expected
+    result = calculator.add("")
+
+    expect(result).to eq 0
   end
-
-  it "returns the sum of numbers in the string" do
-  string = Numbers.new()
-
-  expected = 10
-  actual = string.add("1, 2, 7")
-
-  expect(actual).to eq expected
-  end
-
-  it "allows user to specify delimiter" do
-    string = Numbers.new("+")
-
-    expected = 10
-    actual = string.add("1+2+7")
-
-    expect(actual).to eq expected
-  end
-
-
 end
