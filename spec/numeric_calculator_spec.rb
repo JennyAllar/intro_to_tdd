@@ -43,4 +43,12 @@ describe NumericCalculator do
   end
 
 
+  it "memory value is initially 0" do
+    calculator = NumericCalculator.new
+
+    saved_value = calculator.get
+
+    expect(saved_value).to eq 0
+  end
+
 end
