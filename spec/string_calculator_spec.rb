@@ -10,4 +10,12 @@ describe StringCalc do
 
     expect(result).to eq 0
   end
+
+  it "returns the sum of numbers passed to add" do
+    calculator = StringCalc.new
+
+    result = calculator.add("1, 2, 7")
+
+    expect(result).to eq 10
+  end
 end
