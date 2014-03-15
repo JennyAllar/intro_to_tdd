@@ -1,6 +1,6 @@
 class NumericCalculator
   def initialize
-    @saved_value = 0
+    clear
   end
 
   def add(x, y)
